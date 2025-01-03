@@ -1,0 +1,34 @@
+.item {
+    background-image: url("../asset/333a0f124c2d7fe9857e19e8636f36a8_916177912106998656.png");
+    background-position: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: float 4s ease-in-out infinite;
+    /* opacity: 0.3; */
+    filter: blur(3.8px);
+    transition: filter 0.2s ease-in-out;
+}
+
+.item:hover {
+    /* opacity: 1; */
+    filter: blur(0);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(8deg);
+    }
+}
