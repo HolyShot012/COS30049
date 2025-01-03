@@ -1,26 +1,37 @@
 import React from "react";
 import Item from "./item";
+import SwapBox from "./swapBox";
+import Container2Item from "./Container-2";
+
 const HomeComponent = () => {
     return (
         <>
-            <div className="home-component">
+            <div className="home-component-1">
                 <Item />
                 <div className="home-component--content">
                     <h1 className="home-component--title">Swap anytime, anywhere</h1>
                     <div className="swap-box">
-                        <div className="swap-box--container buy">
-                            <span className="swap-box--span">Sell</span>
-                            <div className="swap-box--input">
-                                <input type="text"></input>
-                                <select>
-                                    <option value="Select token">Select token</option>
-                                </select>
-                            </div>
-                            <span className="swap-box--span">$0</span>
-                        </div>
-                        <div className="swap-box--container sell"></div>
+                        <SwapBox />
+                        <div className="swap-box--select">F</div>
+                        <SwapBox />
                         <button className="swap-button">Get Started</button>
                     </div>
+                    <p className="home-component--footer">the best crypto exchange</p>
+
+                </div>
+            </div >
+
+            <div className="home-component-2">
+
+                <h1 className="home-component-2--title">Go direct to Defi</h1>
+                <div className="home-component-2--container">
+
+                    <Container2Item />
+                    <Container2Item />
+                    <Container2Item />
+                    <Container2Item />
+
+
                 </div>
             </div>
 
